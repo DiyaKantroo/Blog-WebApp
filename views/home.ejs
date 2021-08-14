@@ -1,0 +1,17 @@
+
+<%-include("partials/header"); -%>
+
+        <h1> HOME </h1>
+        <p><%=para1%></p>
+
+      
+      <% console.log(array)  %>
+  <%    for(var i = 0 ; i<array.length ; i++){   %>
+  <%            console.log(array[i].title);   %>
+              <h1> <%= array[i].title; %> </h1>
+              <p> <%=array[i].content.substring(0,100)  ; %> ....</p>
+   <%   }                                          %>
+   
+         
+          
+<%-include("partials/footer"); -%>    
